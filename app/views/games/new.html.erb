@@ -1,0 +1,15 @@
+<h1>Lets play countdown...</h1>
+<h2>Try and create the longest word with the given letters</h2>
+
+<form action="/score" method="post" data-turbo="false">
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  <%= hidden_field_tag :letters, @letters %>
+  <input class="search-bar" type="text" name="attempt" placeholder="Type attempt...">
+  <input class="button" type="submit" value="Play">
+</form>
+
+<div class="letters">
+  <% @letters.each do |letter| %>
+    <h3 class="letter"><%= letter %></h3>
+  <% end %>
+</div>

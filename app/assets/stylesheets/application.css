@@ -13,3 +13,67 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+  background-color: beige;
+}
+
+h1, h2, h3 {
+  font-family: 'Courier New', Courier, monospace;
+  color:rgb(255, 0, 212);
+}
+
+h3 {
+  font-size: 30px;
+}
+
+.container {
+  padding-top: 150px;
+  width: 800px;
+  margin:auto;
+}
+
+ .letters {
+  display: flex;
+  justify-content: space-between;
+ }
+
+ .letter {
+  border: solid, 1px, grey;
+  color: white;
+  background-color: rgb(255, 0, 212);
+  border-radius: 10px;
+  box-shadow: 4px 4px 1px grey;
+  padding: 20px;
+ }
+
+ .letter:hover {
+  box-shadow: 4px 4px 1px rgb(28, 16, 116);
+  color: rgb(28, 16, 116);
+ }
+
+ form {
+  display: flex;
+  justify-content: space-evenly;
+  height: 50px;
+}
+
+.search-bar{
+  flex-grow: 3;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  }
+
+.button{
+  flex-grow: 1;
+  background-color: rgb(255, 0, 212);
+  border-radius: 10px;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+}
+
+.button:hover {
+  background-color: white;
+  color: black;
+}
